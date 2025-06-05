@@ -2,10 +2,10 @@ import re
 class Solution(object):
     def isPalindrome(self, s):
         s = (re.sub('[^a-zA-Z0-9]', "", s)).lower()
-        print(s)
+        # print(s)
 
         r = s[::-1]
-        print(r)
+        # print(r)
 
         if s == r:
             return True
