@@ -12,7 +12,7 @@
 
 class Solution:
     def moveZeroes(self, num: List[int]) -> None:
-        for i in range(len(num)):
-            if num[i]==0:
-                num.remove(num[i])
+        for i in num:
+            if i==0:
+                num.remove(i)
                 num.append(0)
